@@ -4,4 +4,6 @@ input = File.read('input').strip
 
 print "Input is #{input}"
 print "\n"
-print "Checksum Result is #{Checksum.sum_of_minmaxdiff_by_sheet input}"
+print "sum_of_diff_minmax_by_sheet is #{Checksum.sum_of_diff_minmax_by_sheet input}"
+print "\n"
+print "sum_of_evenly_divisible_by_sheet is #{Checksum.sum_of_evenly_divisible_by_sheet input}"
