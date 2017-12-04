@@ -1,11 +1,17 @@
 source 'https://rubygems.org'
 
-gem 'minitest'
-gem 'minitest-colorize'
-gem 'minitest-reporters'
 gem 'rake'
-gem 'pry'
-gem 'guard'
-gem 'guard-minitest'
+
+group :development do
+  gem 'minitest'
+  gem 'minitest-colorize'
+  gem 'minitest-reporters'
+
+  gem 'guard'
+  gem 'guard-minitest'
+
+  gem 'pry'
+end
+
 
 
