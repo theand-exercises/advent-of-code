@@ -7,6 +7,4 @@ require 'minitest/reporters'
 MiniTest::Reporters.use!
 
 
-
-
 require_relative '../lib/inverse_captcha'
