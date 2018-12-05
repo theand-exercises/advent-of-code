@@ -47,4 +47,28 @@ describe DeviceFrequency do
   end
 
 
+  describe "#find_first_freq_reached_twice" do
+    it 'it should be 2' do
+      df.find_first_freq_reached_twice("+1,-2,+3,+1,+1,-2", 0).must_equal 2
+    end
+
+    it 'it should be 0' do
+      df.find_first_freq_reached_twice("+1, -1", 0).must_equal 0
+    end
+
+    it 'it should be 10' do
+      df.find_first_freq_reached_twice("+3, +3, +4, -2, -4", 0).must_equal 10
+    end
+
+    it 'it should be 5' do
+      df.find_first_freq_reached_twice("-6, +3, +8, +5, -6", 0).must_equal 5
+    end
+
+    it 'it should be 14' do
+      df.find_first_freq_reached_twice("+7, +7, -2, -7, -4", 0).must_equal 14
+    end
+
+
+  end
+
 end
